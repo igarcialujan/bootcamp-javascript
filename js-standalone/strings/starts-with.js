@@ -1,19 +1,20 @@
 function startsWith(str, search, position = 0) {
-    
-    var res = false;
-    var j = 0;
+    var res = false
+    var j = 0
 
     for (var i = position; j < search.length; i++) {
         if (str[i] === search[j]) {
-            res = true;
-            j++;
+            res = true
+
+            j++
         } else {
-            res = false;
-            break;
+            res = false
+
+            break
         }
     }
 
-    return res;
+    return res
 }
 
 

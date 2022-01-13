@@ -1,24 +1,22 @@
 function search(string, regEx) {
-
-    var search = string.match(regEx);
-    var res = -1;
-    var j = 0;
+    var search = string.match(regEx)
+    var res = -1
+    var j = 0
 
     for (var i = 0; i < string.length; i++) {
-        var character = string[i];
+        var character = string[i]
 
         if (character === search[j]) {
-            j++;
+            j++
 
-            if (j === search.length) {
-                
-                res = i - j + 1;
-            } else {
-                
-                j = 0;
-            }
+            if (j === search.length)
+                res = i - j + 1
+            else 
+                j = 0
         }
-    } return res;
+    } 
+    
+    return res
 }
 
 

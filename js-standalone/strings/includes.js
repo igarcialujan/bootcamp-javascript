@@ -1,23 +1,23 @@
 function includes(string, searchElement, position) {
-    var res = false;
-    var position = position ? position : 0;
-    var j = 0;
+    var res = false
+    var position = position ? position : 0
+    var j = 0
 
     for (var i = position; (i < string.length && j < searchElement.length); i++) {
-        var char = string[i];
+        var char = string[i]
 
         if (char === searchElement[j]) {
-            j++;
+            j++
 
-            res = true;
+            res = true
         } else {
-            j = 0;
+            j = 0
 
-            res = false;
+            res = false
         }
     }
 
-    return res;
+    return res
 }
 
 // El método includes() determina si una cadena de texto puede ser encontrada dentro de otra cadena de texto, devolviendo true o false según corresponda.

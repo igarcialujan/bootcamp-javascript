@@ -1,13 +1,10 @@
 function charAt(str, index = 0) {
-    
-    var res = '';
+    var res = ''
 
-    if (index >= 0 && index <= str.length - 1) { 
-        res = str[index];
-        
-    }
+    if (index >= 0 && index <= str.length - 1)
+        res = str[index]
     
-    return res;
+    return res
 }
 
 

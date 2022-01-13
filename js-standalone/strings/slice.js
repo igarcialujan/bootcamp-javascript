@@ -1,16 +1,12 @@
 function slice(string, init) {
-    // for loop
-    // var aux (new string)
-    // return aux
-    var res = '';
-
-    var start = init < 0 ? string.length + init : init;
-    var finish = end ? (end < 0 ? string.length + end : end) : string.length;
+    var res = ''
+    var start = init < 0 ? string.length + init : init
+    var finish = end ? (end < 0 ? string.length + end : end) : string.length
 
     for (var i = start; i < finish; i++) {
-        var char = string[i];
+        var char = string[i]
 
-        res += char;
+        res += char
     }
 
     /* Otra manera menos eficiente de hacerlo, por requerir mayor cálculo en cada iteración del for loop, sería:
@@ -20,7 +16,7 @@ function slice(string, init) {
         res += char;
     }*/
     
-    return res;
+    return res
 }
 
 // El método slice() extrae una sección de una cadena y devuelve una cadena nueva.

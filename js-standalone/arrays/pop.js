@@ -1,13 +1,13 @@
 function pop(array) {
-    // El método pop() elimina el último elemento de un array y lo devuelve. Este método cambia la longitud del array.
-    // Devuelve undefined si el array está vacío.
-    if (array.length === 0) {
-        return;
-    }
+    if (array.length === 0)
+        return
     
-    var res = array[array.length - 1];
+    var res = array[array.length - 1]
 
-    array.length--;
+    array.length--
 
-    return res;
+    return res
 }
+
+// El método pop() elimina el último elemento de un array y lo devuelve. Este método cambia la longitud del array.
+// Devuelve undefined si el array está vacío.
